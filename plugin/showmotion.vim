@@ -12,7 +12,6 @@ function! s:SetHighlight() abort
   highlight ShowMotion_BigMotionGroup   cterm=italic,bold,underline ctermbg=57 gui=italic,bold,underline guibg=#5f0087
   highlight ShowMotion_CharSearchGroup  cterm=italic,bold           ctermbg=4  gui=italic,bold           guibg=#3f6691
 endfunction
-call s:SetHighlight()
 augroup showmotion-highlight
   autocmd!
   autocmd ColorScheme * call s:SetHighlight()
